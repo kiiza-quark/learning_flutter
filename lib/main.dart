@@ -26,13 +26,16 @@ class Body extends StatelessWidget {
     return ListView.builder(
       itemCount: 20,
       itemBuilder: (context, rowNum){
-        return column(
+        return Column(
           children: [
-            Text("Learning flutter")
-          ]
-        )
-      };
-
+            Image.asset(),
+            Text("Learning flutter $rowNum",
+            style: TextStyle(color: Colors.amber, fontSize: 40.3),
+            ),
+          ],
+        );
+      }
+    );
 
   }
 }
