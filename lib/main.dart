@@ -23,9 +23,17 @@ class CsDay extends StatelessWidget {
 class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Icon(Icons.car_crash),
-    );
+    return ListView.builder(
+      itemCount: 20,
+      itemBuilder: (context, rowNum){
+        return column(
+          children: [
+            Text("Learning flutter")
+          ]
+        )
+      };
+
+
   }
 }
 
